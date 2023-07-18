@@ -7,9 +7,11 @@ import { v4 as uuidv4 } from 'uuid';
 
 type NoteFormProps = {
   onSubmit: (data: NoteData) => void;
+  onAddTag: (tag: Tag) => void;
+  availableTags: Tag[];
 };
 
-export function NoteForm({ onSubmit }): NoteFormProps {
+export function NoteForm({ onSubmit, onAddTag, availableTags }): NoteFormProps {
   const titleRef = useRef<HTMLInputElement>(null);
   const markdownRef = useRef<HTMLTextAreaElement>(null);
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
