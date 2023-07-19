@@ -55,6 +55,9 @@ export function NoteForm({ onSubmit, onAddTag, availableTags }): NoteFormProps {
                     })
                   );
                 }}
+                options={availableTags.map((tag) => {
+                  return { label: tag.label, value: tag.id };
+                })}
                 isMulti
               />
             </Form.Group>
