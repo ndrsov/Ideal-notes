@@ -44,7 +44,7 @@ function App() {
     });
   }, [notes, tags]);
 
-  function onCreateNote(tags, ...data: NoteData) {
+  function onCreateNote({ tags, ...data }: NoteData) {
     setNotes((prevNotes) => {
       return [
         ...prevNotes,
