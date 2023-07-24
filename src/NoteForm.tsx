@@ -26,7 +26,7 @@ export function NoteForm({ onSubmit, onAddTag, availableTags }): NoteFormProps {
       tags: selectedTags,
     });
 
-    navigate('...');
+    navigate('..');
   }
 
   return (
