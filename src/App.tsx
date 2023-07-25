@@ -60,7 +60,7 @@ function App() {
   return (
     <Container className='my-4'>
       <Routes>
-        <Route path='/' element={<h1>Home</h1>} />
+        <Route path='/' element={<NoteList />} />
         <Route
           path='/new'
           element={
