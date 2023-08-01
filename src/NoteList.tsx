@@ -4,7 +4,7 @@ import ReactSelect from 'react-select';
 import { Note, Tag } from './App';
 import { Link } from 'react-router-dom';
 
-type simplifiedNote = {
+type SimplifiedNote = {
   tags: Tag[];
   title: string;
   id: string;
