@@ -71,7 +71,7 @@ function App() {
 
   function onDeleteNote(id: string) {
     setNotes((prevNotes) => {
-      return prevNotes.filter((note) => note.id == !id);
+      return prevNotes.filter((note) => note.id !== id);
     });
   }
 
