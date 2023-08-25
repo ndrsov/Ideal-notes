@@ -1,3 +1,3 @@
 #Ideal-notes
 
-Note Taking App with Markdown and categories support made with React/TypeScript
+Note Taking App with Markdown support and categories or title filtering made with React/TypeScript
