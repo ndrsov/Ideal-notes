@@ -148,7 +148,9 @@ function EditTagsModal() {
             {availableTabs.map((tag) => (
               <Row key={tag.id}>
                 <Col></Col>
-                <Col xs='auto'></Col>
+                <Col xs='auto'>
+                  <Button variant='outline-danger'>&times;</Button>
+                </Col>
               </Row>
             ))}
           </Stack>
