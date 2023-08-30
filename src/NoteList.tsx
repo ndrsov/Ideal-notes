@@ -136,7 +136,7 @@ function NoteCard({ id, title, tags }: SimplifiedNote) {
   );
 }
 
-function EditTagsModal() {
+function EditTagsModal({ availableTags }) {
   return (
     <Modal>
       <Modal.Header closeButton>
@@ -145,7 +145,7 @@ function EditTagsModal() {
       <Modal.Body>
         <Form>
           <Stack gap={2}>
-            {availableTabs.map((tag) => (
+            {availableTags.map((tag) => (
               <Row key={tag.id}>
                 <Col></Col>
                 <Col xs='auto'>
