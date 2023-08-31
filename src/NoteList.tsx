@@ -136,9 +136,13 @@ function NoteCard({ id, title, tags }: SimplifiedNote) {
   );
 }
 
-function EditTagsModal({ availableTags }) {
+function EditTagsModal({
+  availableTags,
+  handleClose,
+  show,
+}: EditTagsModalProps) {
   return (
-    <Modal>
+    <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
         <Modal.Title>Edit Tags</Modal.Title>
       </Modal.Header>
