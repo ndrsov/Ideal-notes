@@ -34,7 +34,7 @@ type EditTagsModalProps = {
 export function NoteList({ availableTags, notes }: NoteListProps) {
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const [title, setTitle] = useState('');
-  const [editTagsModalIsOpen, setEditTAgsModalIsOpen] = useState(false);
+  const [editTagsModalIsOpen, setEditTagsModalIsOpen] = useState(false);
 
   const filteredNotes = useMemo(() => {
     return notes.filter((note) => {
