@@ -106,7 +106,11 @@ export function NoteList({ availableTags, notes }: NoteListProps) {
           </Col>
         ))}
       </Row>
-      <EditTagsModal show={} handleClose={} availableTags={availableTags} />
+      <EditTagsModal
+        show={editTagsModalIsOpen}
+        handleClose={setEditTagsModalIsOpen}
+        availableTags={availableTags}
+      />
     </>
   );
 }
