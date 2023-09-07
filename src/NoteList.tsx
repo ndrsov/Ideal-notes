@@ -60,7 +60,12 @@ export function NoteList({ availableTags, notes }: NoteListProps) {
             <Link to={'/new'}>
               <Button variant='primary'>Create</Button>
             </Link>
-            <Button variant='outline-secondary'>Edit Tags</Button>
+            <Button
+              onClick={() => setEditTagsModalIsOpen(true)}
+              variant='outline-secondary'
+            >
+              Edit Tags
+            </Button>
           </Stack>
         </Col>
       </Row>
