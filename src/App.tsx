@@ -79,6 +79,10 @@ function App() {
     setTags((prev) => [...prev, tag]);
   }
 
+  function updateTag(id: string, label: string) {}
+
+  function deleteTag(id: string) {}
+
   return (
     <Container className='my-4'>
       <Routes>
