@@ -81,7 +81,11 @@ function App() {
 
   function updateTag(id: string, label: string) {}
 
-  function deleteTag(id: string) {}
+  function deleteTag(id: string) {
+    setTags((prevTags) => {
+      return prevTags.filter((tag) => tag.id !== id);
+    });
+  }
 
   return (
     <Container className='my-4'>
