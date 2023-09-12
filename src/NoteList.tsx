@@ -23,12 +23,16 @@ type SimplifiedNote = {
 type NoteListProps = {
   availableTags: Tag[];
   notes: Note[];
+  onDeleteTag: (id: string) => void;
+  onUpdateTag: (id: string, label: string) => void;
 };
 
 type EditTagsModalProps = {
   show: boolean;
   availableTags: Tag[];
   handleClose: () => void;
+  onDeleteTag: (id: string) => void;
+  onUpdateTag: (id: string, label: string) => void;
 };
 
 export function NoteList({ availableTags, notes }: NoteListProps) {
