@@ -116,6 +116,8 @@ export function NoteList({ availableTags, notes }: NoteListProps) {
         ))}
       </Row>
       <EditTagsModal
+        onUpdateTag={onUpdateTag}
+        onDeleteTAg={onDeleteTag}
         show={editTagsModalIsOpen}
         handleClose={setEditTagsModalIsOpen}
         availableTags={availableTags}
@@ -160,6 +162,8 @@ function EditTagsModal({
   availableTags,
   handleClose,
   show,
+  onDeleteTag,
+  onUpdateTag,
 }: EditTagsModalProps) {
   return (
     <Modal show={show} onHide={handleClose}>
