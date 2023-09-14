@@ -122,7 +122,7 @@ export function NoteList({
       </Row>
       <EditTagsModal
         onUpdateTag={onUpdateTag}
-        onDeleteTAg={onDeleteTag}
+        onDeleteTag={onDeleteTag}
         show={editTagsModalIsOpen}
         handleClose={setEditTagsModalIsOpen}
         availableTags={availableTags}
